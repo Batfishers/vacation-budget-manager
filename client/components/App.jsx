@@ -4,7 +4,7 @@ import Container from './Container.jsx';
 function App() {
 
   return (
-    <div>
+    <div className='page'>
       <h1>
         Vacation Budget Manager
       </h1>
