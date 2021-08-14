@@ -1,21 +1,15 @@
-import React, { Component } from 'react';
-// import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
 
 
-class App extends Component {
-  constructor(props) {
-    super(props);
+function App() {
 
-  }
-  render() {
-    return (
+  return (
+    <div>
       <div>
-        <div>
-          Literally Anything Will Make Me Happy
-        </div>
+        Literally Anything Will Make Me Happy
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default App;
