@@ -1,0 +1,602 @@
+{8 items
+  "offset":0
+  "pageSize":300
+  "totalSize":427
+  "marketSize":493
+  "sortType":"STAR"
+  "tripFilterSummary":{11 items
+  "totalSizeFiltered":61
+  "cityCounts":{12 items
+  "3000002515":4
+  "3000002535":1
+  "3000002536":4
+  "3000002573":24
+  "3000002589":9
+  "3000002612":1
+  "3000002663":3
+  "3000002672":6
+  "3000002795":3
+  "3000090607":3
+  "3000091690":1
+  "3000091989":2
+}
+"clusterCounts":{...}14 items
+"amenityCounts":{...}13 items
+"starRatingCounts":{...}5 items
+"brandIdCounts":{...}16 items
+"propertyTypeCounts":{...}1 item
+"propertyType":[...]1 item
+"dealTypeCounts":{...}2 items
+"minFilterPrice":"0.00"
+"maxFilterPrice":"500.0"
+}
+"cityInfo":{10 items
+"cityId":3000002573
+"cityName":"Denver"
+"stateCode":"CO"
+"stateName":"Colorado"
+"countryCode":"US"
+"countryName":"United States"
+"areaId":304
+"lat":39.70724868774414
+"lon":-105.02615356445312
+"zonePolygonInfo":{...}14 items
+}
+"hotels":[61 items
+0:{16 items
+"hotelId":"46392"
+"name":"Embassy Suites by Hilton Denver Tech Center North"
+"brand":"Embassy Suites"
+"starRating":3.5
+"location":{...}8 items
+"thumbnailUrl":"https://mobileimg.priceline.com/htlimg/46/46392/thumbnail-150-square.jpg"
+"hotelFeatures":{...}1 item
+"overallGuestRating":8.1
+"totalReviewCount":163
+"proximity":7.606853414725013
+"ratesSummary":{13 items
+"minPrice":"123.38"
+"minCurrencyCode":"USD"
+"minStrikePrice":"137.09"
+"pclnId":"D78A294DD19F056EA7F030E254D06B2DC393FD7CC145AF5728C52B6F19D5FD23F2A77021FE9250EF9B2848AE17F603A8CE4C7B5A8526F9A4E37A4AF43A25F51AD8CB823BDD455E42385EE132F7BF41D861EBCE21B0898C66363FE93C5DDD443C26C398CEF21EA77AE6A39899861BC81A"
+"freeCancelableRateAvail":true
+"payWhenYouStayAvailable":true
+"minRatePromos":[...]1 item
+"availablePromos":[...]1 item
+"roomLeft":1
+"gid":3113
+"rateIdentifier":"B098FD2CE003241D22F7D3CA9452EC95641F1B6F5ECB6D203BFE493B214FA22C68555134777236EF08F7D9F2982AB9FA852C1191FF93A428A64EB1400C8D913F7FB95F4B2EB09E157B057C63EE7ECA3EAFFD05F685157B54C09F6E6DACDA3F9631AFB2C89E994F7D"
+"ccNotRequiredAvailable":false
+"applePayRateAvailable":false
+}
+"allInclusiveRateProperty":false
+"displayRank":10000
+"recmdScore":0
+"merchandising":{}0 items
+"media":{...}2 items
+}
+1:{18 items
+"hotelId":"28391505"
+"name":"Homewood Suites- Denver Downtown Convention Center"
+"brand":"Homewood Suites"
+"starRating":3.5
+"location":{...}8 items
+"thumbnailUrl":"https://mobileimg.priceline.com/htlimg/28391/28391505/thumbnail-150-square.jpg"
+"hotelFeatures":{...}1 item
+"overallGuestRating":9
+"totalReviewCount":185
+"proximity":3.050856932566654
+"ratesSummary":{...}12 items
+"allInclusiveRateProperty":false
+"displayRank":9999
+"recmdScore":0
+"merchandising":{...}1 item
+"badges":[...]1 item
+"media":{...}2 items
+"keyFeatures":[...]1 item
+}
+2:{18 items
+"hotelId":"46372"
+"name":"Embassy Suites Hotel Denver Tech Center"
+"brand":"Embassy Suites"
+"starRating":3.5
+"location":{...}8 items
+"thumbnailUrl":"https://mobileimg.priceline.com/htlimg/46/46372/thumbnail-150-square.jpg"
+"hotelFeatures":{...}1 item
+"overallGuestRating":8.6
+"totalReviewCount":151
+"proximity":11.508334189875683
+"ratesSummary":{...}14 items
+"allInclusiveRateProperty":false
+"displayRank":9998
+"recmdScore":0
+"dealTypes":[...]1 item
+"merchandising":{}0 items
+"media":{...}2 items
+"keyFeatures":[...]1 item
+}
+3:{17 items
+"hotelId":"46405"
+"name":"Embassy Suites by Hilton Denver Central Park"
+"brand":"Embassy Suites"
+"starRating":3.5
+"location":{...}8 items
+"thumbnailUrl":"https://mobileimg.priceline.com/htlimg/46/46405/thumbnail-150-square.jpg"
+"hotelFeatures":{...}1 item
+"overallGuestRating":8.5
+"totalReviewCount":79
+"proximity":9.841748219278553
+"ratesSummary":{...}12 items
+"allInclusiveRateProperty":false
+"displayRank":9997
+"recmdScore":0
+"merchandising":{}0 items
+"media":{...}2 items
+"keyFeatures":[...]1 item
+}
+4:{17 items
+"hotelId":"33179506"
+"name":"SpringHill Suites by Marriott Denver Downtown"
+"brand":"Springhill Suites"
+"starRating":3.5
+"location":{...}8 items
+"thumbnailUrl":"https://mobileimg.priceline.com/htlimg/33179/33179506/thumbnail-150-square.jpg"
+"hotelFeatures":{...}1 item
+"overallGuestRating":8.9
+"totalReviewCount":156
+"proximity":3.037893609552058
+"ratesSummary":{...}12 items
+"allInclusiveRateProperty":false
+"displayRank":9996
+"recmdScore":0
+"merchandising":{}0 items
+"media":{...}2 items
+"keyFeatures":[...]1 item
+}
+5:{18 items
+"hotelId":"59426504"
+"name":"Hyatt House Denver/Downtown"
+"brand":"Hyatt House"
+"starRating":3.5
+"location":{...}8 items
+"thumbnailUrl":"https://mobileimg.priceline.com/htlimg/59426/59426504/thumbnail-150-square.jpg"
+"hotelFeatures":{...}1 item
+"overallGuestRating":8.7
+"totalReviewCount":80
+"proximity":2.958165830867746
+"ratesSummary":{...}15 items
+"allInclusiveRateProperty":false
+"displayRank":9995
+"recmdScore":0
+"dealTypes":[...]1 item
+"merchandising":{}0 items
+"media":{...}2 items
+"keyFeatures":[...]1 item
+}
+6:{16 items
+"pclnId":"32EFB55571483C7D153D3C0B2B69E877B9B71248A0562A7C9F25B8690C01344C942D76AFE75B1B99454DD0FF8DA87A6FEBE4A4DA3101C34A"
+"hotelType":"SOPQ"
+"starRating":3
+"location":{...}9 items
+"hotelFeatures":{...}2 items
+"overallGuestRating":5
+"totalReviewCount":1400
+"proximity":7
+"ratesSummary":{15 items
+"minPrice":"88.00"
+"minCurrencyCode":"USD"
+"minStrikePrice":"114.00"
+"pclnId":"32EFB55571483C7D153D3C0B2B69E877B9B71248A0562A7C9F25B8690C01344C942D76AFE75B1B99454DD0FF8DA87A6FEBE4A4DA3101C34A"
+"freeCancelableRateAvail":false
+"payWhenYouStayAvailable":false
+"gid":4499
+"rateIdentifier":"71A00350AAB286F12327C0363812EFA797ED88B59C28999BBE1AA0191B562E9C0B1B1C5D4A1EAF644800A842B5F84D567EA3048807BEE935"
+"programName":"Express_Deal"
+"strikeThroughPrice":"114.00"
+"merchandisingFlag":false
+"minRateSavingsPercentage":23
+"ccNotRequiredAvailable":false
+"applePayRateAvailable":false
+"minRateStrikeThroughPrice":"114"
+}
+"allInclusiveRateProperty":false
+"displayRank":9994
+"recmdScore":0
+"dealTypes":[1 item
+0:"EXPRESS_DEAL"
+]
+"bedChoiceAvailable":false
+"merchandising":{...}1 item
+"badges":[...]1 item
+}
+7:{17 items
+"pclnId":"13B813ECF384E57B5B1887E8D7259ED613B696F33340DF0FCA2861075BCE349A29731B53F07AF6140756F43C5AB31F575BED962D6B074CDB8C1F5E199B54A548EB29DD9F112813D26666C53547FE72D923C494409B359ED2279007EF11A1C9A2244AB52E5D3D6B2E6D87F1F126E86ACB408E232E179DAC6F"
+"hotelType":"SOPQ"
+"starRating":3
+"location":{...}9 items
+"hotelFeatures":{...}2 items
+"overallGuestRating":8
+"totalReviewCount":200
+"proximity":13
+"ratesSummary":{15 items
+"minPrice":"97.00"
+"minCurrencyCode":"USD"
+"minStrikePrice":"124.43"
+"pclnId":"13B813ECF384E57B5B1887E8D7259ED613B696F33340DF0FCA2861075BCE349A29731B53F07AF6140756F43C5AB31F575BED962D6B074CDB8C1F5E199B54A548EB29DD9F112813D26666C53547FE72D923C494409B359ED2279007EF11A1C9A2244AB52E5D3D6B2E6D87F1F126E86ACB408E232E179DAC6F"
+"freeCancelableRateAvail":false
+"payWhenYouStayAvailable":false
+"gid":3335
+"rateIdentifier":"0756F43C5AB31F575BED962D6B074CDB8C1F5E199B54A548EB29DD9F112813D2F602C9B08370364B23C494409B359ED2279007EF11A1C9A2BA05078353D0288E2C8A03714EF262B9C39DDE4B0B43F419606E8BA90222DB972CA1E893A89317C4CF897756DA245B2525F0009BFF61214B"
+"programName":"Express_Deal"
+"strikeThroughPrice":"124.43"
+"merchandisingFlag":false
+"minRateSavingsPercentage":22
+"ccNotRequiredAvailable":false
+"applePayRateAvailable":false
+"minRateStrikeThroughPrice":"124"
+}
+"allInclusiveRateProperty":false
+"displayRank":9993
+"recmdScore":0
+"dealTypes":[1 item
+0:"EXPRESS_DEAL"
+]
+"bedChoiceAvailable":true
+"merchandising":{1 item
+"topBooked":{2 items
+"type":"TOP_BOOKED"
+"description":"TOP BOOKED HOTEL"
+}
+}
+"badges":[1 item
+0:{2 items
+"type":"TOP_BOOKED"
+"description":"TOP BOOKED HOTEL"
+}
+]
+"keyFeatures":[1 item
+0:"clean"
+]
+}
+8:{16 items
+"pclnId":"5B81595CD634DA08E534A348A26B189C0960C19180521178417FA921AD7399C361A6A69B259957CE8D50DF8B23FAA16959EF7E81EE51174119DC69409B0F6D869522F98BFCFA7A2C7B6438D02C652FA5E26447753CE97985363FE93C5DDD443C26C398CEF21EA77A190147CD22FD722A"
+"hotelType":"SOPQ"
+"starRating":3
+"location":{...}9 items
+"hotelFeatures":{...}2 items
+"overallGuestRating":8
+"totalReviewCount":200
+"proximity":14
+"ratesSummary":{15 items
+"minPrice":"100.00"
+"minCurrencyCode":"USD"
+"minStrikePrice":"125.10"
+"pclnId":"5B81595CD634DA08E534A348A26B189C0960C19180521178417FA921AD7399C361A6A69B259957CE8D50DF8B23FAA16959EF7E81EE51174119DC69409B0F6D869522F98BFCFA7A2C7B6438D02C652FA5E26447753CE97985363FE93C5DDD443C26C398CEF21EA77A190147CD22FD722A"
+"freeCancelableRateAvail":false
+"payWhenYouStayAvailable":false
+"gid":3540
+"rateIdentifier":"4D40FAC8AAC5790F3078C5EEB17928FF2803BBA76AD1001316D65C661A6E815DF7CDE0F5D9F8288A5018FC53872CB2CD852C1191FF93A428A64EB1400C8D913F91BC8C0F33491C7547473C28003586F3BC4BE7FD7F54118B0CDA33F0A747C401F8555D02A1A70B30E7D18C7B3D7C0E92"
+"programName":"Express_Deal"
+"strikeThroughPrice":"125.10"
+"merchandisingFlag":false
+"minRateSavingsPercentage":20
+"ccNotRequiredAvailable":false
+"applePayRateAvailable":false
+"minRateStrikeThroughPrice":"125"
+}
+"allInclusiveRateProperty":false
+"displayRank":9992
+"recmdScore":0
+"dealTypes":[1 item
+0:"EXPRESS_DEAL"
+]
+"bedChoiceAvailable":true
+"merchandising":{0 items
+}
+"keyFeatures":[1 item
+0:"clean"
+]
+}
+9:{16 items
+"pclnId":"5EEECFE4D74B62D1CAB9D1359A90F89DDFBDF84FC3212F9F9098EB03252A832E4850BE8D5D40F46A660EBAE8CA8D3CC835F48FE4CE0E7D94439A5ACBEAB083C99DD8586830CEF1375C18AB4D0D439B938AFDCB548C6BF03BC3175F33AE764683ED927EEE92EA459011912F596BAEF438D288459C4C4436DE"
+"hotelType":"SOPQ"
+"starRating":3
+"location":{9 items
+"address":{4 items
+"cityName":"Broomfield"
+"provinceCode":"CO"
+"countryName":"United States"
+"isoCountryCode":"US"
+}
+"timeZone":"America/Denver"
+"neighborhoodId":"910002740"
+"neighborhoodName":"Westminster - Broomfield"
+"cityId":3000002536
+"zoneId":"2740"
+"zoneName":"Westminster - Broomfield Area"
+"zoneType":"Z"
+"encLatLong":"B07A86435DD025CA51B08E2488246D1DDDBED8363368647F9794EFA151316EC0"
+}
+"hotelFeatures":{2 items
+"hotelAmenityCodes":[13 items
+0:"FBRKFST"
+1:"FINTRNT"
+2:"FINTRPUB"
+3:"FPRKING"
+4:"HEALTHSVCS"
+5:"SPOOL"
+6:"KITCHEN"
+7:"RESTRNT"
+8:"FITSPA"
+9:"PETALLOW"
+10:"HANDFAC"
+11:"NSMKFAC"
+12:"BEDDING"
+]
+"hotelAmenities":[13 items
+0:{3 items
+"code":"FBRKFST"
+"name":"Free Breakfast"
+"free":true
+}
+1:{3 items
+"code":"FINTRNT"
+"name":"Free Internet Access"
+"free":true
+}
+2:{3 items
+"code":"FINTRPUB"
+"name":"Free Internet In Public Areas"
+"free":true
+}
+3:{3 items
+"code":"FPRKING"
+"name":"Free Parking"
+"free":true
+}
+4:{3 items
+"code":"HEALTHSVCS"
+"name":"Health Services"
+"free":false
+}
+5:{3 items
+"code":"SPOOL"
+"name":"Swimming Pool"
+"free":false
+}
+6:{3 items
+"code":"KITCHEN"
+"name":"Kitchen/Kitchenette"
+"free":false
+}
+7:{3 items
+"code":"RESTRNT"
+"name":"Restaurant"
+"free":false
+}
+8:{3 items
+"code":"FITSPA"
+"name":"Fitness Center"
+"free":false
+}
+9:{3 items
+"code":"PETALLOW"
+"name":"Pets Allowed"
+"free":false
+}
+10:{3 items
+"code":"HANDFAC"
+"name":"Handicapped Rooms/Facilities"
+"free":false
+}
+11:{3 items
+"code":"NSMKFAC"
+"name":"No Smoking Rooms/Facilities"
+"free":false
+}
+12:{3 items
+"code":"BEDDING"
+"name":"Bedding"
+"free":false
+}
+]
+}
+"overallGuestRating":9
+"totalReviewCount":100
+"proximity":19
+"ratesSummary":{16 items
+"minPrice":"101.00"
+"minCurrencyCode":"USD"
+"minStrikePrice":"125.10"
+"pclnId":"5EEECFE4D74B62D1CAB9D1359A90F89DDFBDF84FC3212F9F9098EB03252A832E4850BE8D5D40F46A660EBAE8CA8D3CC835F48FE4CE0E7D94439A5ACBEAB083C99DD8586830CEF1375C18AB4D0D439B938AFDCB548C6BF03BC3175F33AE764683ED927EEE92EA459011912F596BAEF438D288459C4C4436DE"
+"freeCancelableRateAvail":false
+"payWhenYouStayAvailable":false
+"roomLeft":3
+"gid":3316
+"rateIdentifier":"297824DF232AA42AF67EEB865E9FAC0BCF8A2D2830976B97179ADADDE1769FDF2BA5F2374D1787000F76DD14EF388977279007EF11A1C9A2BA05078353D0288E2C8A03714EF262B9278C2DDA23F9FCE7BC4BE7FD7F54118B0CDA33F0A747C4012281DC3D5407F69CD1EB78C114FBD7C2"
+"programName":"Express_Deal"
+"strikeThroughPrice":"125.10"
+"merchandisingFlag":false
+"minRateSavingsPercentage":19
+"ccNotRequiredAvailable":false
+"applePayRateAvailable":false
+"minRateStrikeThroughPrice":"124"
+}
+"allInclusiveRateProperty":false
+"displayRank":9991
+"recmdScore":0
+"dealTypes":[1 item
+0:"EXPRESS_DEAL"
+]
+"bedChoiceAvailable":true
+"merchandising":{0 items
+}
+"keyFeatures":[1 item
+0:"clean"
+]
+}
+10:{...}16 items
+11:{...}16 items
+12:{...}16 items
+13:{...}17 items
+14:{...}18 items
+15:{...}16 items
+16:{...}17 items
+17:{...}18 items
+18:{...}19 items
+19:{...}18 items
+20:{...}16 items
+21:{...}17 items
+22:{...}18 items
+23:{...}16 items
+24:{...}17 items
+25:{...}18 items
+26:{...}16 items
+27:{...}18 items
+28:{17 items
+"hotelId":"8876505"
+"name":"Hampton Inn & Suites Denver Littleton"
+"brand":"Hampton Inn"
+"starRating":3
+"location":{8 items
+"address":{6 items
+"addressLine1":"7611 Shaffer Parkway"
+"cityName":"Littleton"
+"provinceCode":"CO"
+"countryName":"United States"
+"zip":"80127"
+"isoCountryCode":"US"
+}
+"longitude":-105.137438
+"latitude":39.577811
+"timeZone":"America/Denver"
+"neighborhoodId":"910050283"
+"neighborhoodName":"Littleton - Highlands Ranch"
+"cityId":3000002672
+"zoneId":"50283"
+}
+"thumbnailUrl":"https://mobileimg.priceline.com/htlimg/8876/8876505/thumbnail-150-square.jpg"
+"hotelFeatures":{...}1 item
+"overallGuestRating":8.4
+"totalReviewCount":38
+"proximity":10.7255899716328
+"ratesSummary":{12 items
+"minPrice":"133.45"
+"minCurrencyCode":"USD"
+"pclnId":"EC98023AF07FDDADAA38B1D907C8897A237DA5936AD42FC74813FEE08120505DE4991A897CD765CD745FE22070B176F40D6F6DE735075B8F091F31876AE3BC3EB72B1533A3804397"
+"freeCancelableRateAvail":true
+"payWhenYouStayAvailable":true
+"gid":2956
+"rateIdentifier":"05EEF8B6399CFDE3480DA9228C88EEE8B51E28DB351DF958F49F2D5CBB63C96EAB59483FC350331171208E1E82CD9F7C05EEF8B6399CFDE38582DC1478F73367"
+"savingsClaimStrikePrice":"196.43"
+"savingsClaimPercentage":"32"
+"savingsClaimDisclaimer":"The highest price of similar properties with the same star level and neighborhood for your dates."
+"ccNotRequiredAvailable":false
+"applePayRateAvailable":false
+}
+"allInclusiveRateProperty":false
+"displayRank":9972
+"recmdScore":0
+"merchandising":{}0 items
+"media":{...}2 items
+"keyFeatures":[...]1 item
+}
+29:{...}18 items
+30:{...}17 items
+31:{...}17 items
+32:{...}16 items
+33:{...}17 items
+34:{...}17 items
+35:{...}17 items
+36:{...}17 items
+37:{...}17 items
+38:{...}17 items
+39:{...}17 items
+40:{...}16 items
+41:{...}17 items
+42:{...}17 items
+43:{...}17 items
+44:{...}17 items
+45:{...}18 items
+46:{...}17 items
+47:{...}18 items
+48:{...}17 items
+49:{...}17 items
+50:{...}15 items
+51:{...}17 items
+52:{...}17 items
+53:{...}17 items
+54:{...}17 items
+55:{...}17 items
+56:{...}17 items
+57:{...}18 items
+58:{...}16 items
+59:{...}17 items
+60:{17 items
+"hotelId":"31595505"
+"name":"Hampton Inn & Suites Denver Downtown Convention Center"
+"brand":"Hampton Inn"
+"starRating":3
+"location":{8 items
+"address":{6 items
+"addressLine1":"550 15th Street"
+"cityName":"Denver"
+"provinceCode":"CO"
+"countryName":"United States"
+"zip":"80202"
+"isoCountryCode":"US"
+}
+"longitude":-104.992645
+"latitude":39.743103
+"timeZone":"America/Denver"
+"neighborhoodId":"910004251"
+"neighborhoodName":"Downtown Denver"
+"cityId":3000002573
+"zoneId":"4251"
+}
+"thumbnailUrl":"https://mobileimg.priceline.com/htlimg/31595/31595505/thumbnail-150-square.jpg"
+"hotelFeatures":{1 item
+"hotelAmenityCodes":[9 items
+0:"FBRKFST"
+1:"FINTRNT"
+2:"FINTRPUB"
+3:"HEALTHSVCS"
+4:"SPOOL"
+5:"FITSPA"
+6:"PETALLOW"
+7:"HANDFAC"
+8:"NSMKFAC"
+]
+}
+"overallGuestRating":8.7
+"totalReviewCount":152
+"proximity":3.050863589439487
+"ratesSummary":{12 items
+"minPrice":"284.14"
+"minCurrencyCode":"USD"
+"pclnId":"F9016719A738F05A1E321E700BA7441CB8D1DE16C13C5832AB2147699E3F85158C7B710088A916BAC5D887A22227F70802136E67F78D9BA783520BE009A2ECB24DB4AC07DA41FA86"
+"freeCancelableRateAvail":true
+"payWhenYouStayAvailable":true
+"gid":2877
+"rateIdentifier":"52DFACCB4F3D5C52C93F8002F56D31EB28D0BD4CDCF0A571F49F2D5CBB63C96EB9666301A94F7462B33C86E04E99029E52DFACCB4F3D5C528582DC1478F73367"
+"savingsClaimStrikePrice":"340.00"
+"savingsClaimPercentage":"16"
+"savingsClaimDisclaimer":"The highest price of similar properties with the same star level and neighborhood for your dates."
+"ccNotRequiredAvailable":false
+"applePayRateAvailable":false
+}
+"allInclusiveRateProperty":false
+"displayRank":9940
+"recmdScore":0
+"merchandising":{0 items
+}
+"media":{2 items
+"source":"fastly"
+"url":"https://mobileimg.pclncdn.com/htlimg/master/315/9/5/31595505/master_31595505"
+}
+"keyFeatures":[1 item
+0:"clean"
+]
+}
+]
+}
