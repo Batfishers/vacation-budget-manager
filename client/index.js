@@ -4,8 +4,6 @@ import App from './components/App.jsx';
 import styles from './stylesheets/styles.scss'
 
 
-
-
 render(
   <App />,
   document.getElementById('root')

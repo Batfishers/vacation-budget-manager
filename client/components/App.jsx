@@ -1,21 +1,16 @@
-import React, { Component } from 'react';
-// import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
+import Container from './Container.jsx';
 
+function App() {
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-
-  }
-  render() {
-    return (
-      <div>
-        <div>
-          Literally Anything Will Make Me Happy
-        </div>
-      </div>
-    )
-  }
+  return (
+    <div className='page'>
+      <h1>
+        Vacation Budget Manager
+      </h1>
+      <Container/>
+    </div>
+  )
 }
 
 export default App;

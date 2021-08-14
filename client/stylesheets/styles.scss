@@ -2,5 +2,34 @@ header {
   font-family: "Jost", sans-serif;
 }
 body {
+  
   font-family: "Jost", sans-serif;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 500px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#destinationBox {
+  
+}
+#locationBox {
+
+}
+Box {
+
 }
