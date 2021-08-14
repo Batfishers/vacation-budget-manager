@@ -1,6 +1,18 @@
 header {
+  display: flex;
+  justify-content: center;
   font-family: "Jost", sans-serif;
 }
 body {
   font-family: "Jost", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 40%;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
 }

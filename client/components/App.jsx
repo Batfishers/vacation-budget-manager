@@ -1,13 +1,14 @@
 import React, { Component, useState } from 'react';
-
+import Container from './Container.jsx';
 
 function App() {
 
   return (
     <div>
-      <div>
-        Literally Anything Will Make Me Happy
-      </div>
+      <h1>
+        Vacation Budget Manager
+      </h1>
+      <Container/>
     </div>
   )
 }
