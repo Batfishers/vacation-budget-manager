@@ -1,0 +1,694 @@
+Input: Denver, Co
+
+[23 items
+0:{28 items
+"itemName":"Denver, CO"
+"id":"3000002573"
+"cityID":"3000002573"
+"type":"CITY"
+"lat":39.7392
+"lon":-104.984
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4477869100
+"radius":28.5
+"rank":64.106705
+"country":"US"
+"address":NULL
+"zip":NULL
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+1:{28 items
+"itemName":"Denver Intl Airport (DEN) , CO"
+"id":"DEN"
+"cityID":"3000002558"
+"type":"AIRPORT"
+"lat":39.85270969389905
+"lon":-104.67383147978863
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Commerce City"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":2236061950
+"radius":30.9
+"rank":41.161232
+"country":"US"
+"address":NULL
+"zip":NULL
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+2:{28 items
+"itemName":"Denver Centennial Airport (APA) , CO"
+"id":"APA"
+"cityID":"3000002507"
+"type":"AIRPORT"
+"lat":39.57121552915128
+"lon":-104.85087543848405
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Arapahoe"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":2130706430
+"radius":25
+"rank":0.5
+"country":"US"
+"address":NULL
+"zip":NULL
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+3:{28 items
+"itemName":"Downtown Aquarium - Denver, CO"
+"id":"59615"
+"cityID":"3000002573"
+"type":"POI"
+"lat":39.752018
+"lon":-105.01465
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4353924100
+"radius":28.5
+"rank":22.81434
+"country":"US"
+"address":NULL
+"zip":NULL
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+4:{28 items
+"itemName":"Lower Downtown - Denver, CO"
+"id":"83770606"
+"cityID":"3000002573"
+"type":"POI"
+"lat":39.749454
+"lon":-105.000675
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4353291300
+"radius":28.5
+"rank":20.927109
+"country":"US"
+"address":NULL
+"zip":NULL
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+5:{28 items
+"itemName":"Colorado Convention Center - Denver, CO"
+"id":"20103"
+"cityID":"3000002573"
+"type":"POI"
+"lat":39.742142
+"lon":-104.996146
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4353146400
+"radius":28.5
+"rank":20.514923
+"country":"US"
+"address":NULL
+"zip":NULL
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+6:{28 items
+"itemName":"Cherry Creek Shopping Center - Denver, CO"
+"id":"78273705"
+"cityID":"3000002573"
+"type":"POI"
+"lat":39.72099999
+"lon":-104.95219899
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4352566800
+"radius":28.5
+"rank":18.93618
+"country":"US"
+"address":NULL
+"zip":NULL
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+7:{28 items
+"itemName":"Pepsi Center - Denver, CO"
+"id":"79239705"
+"cityID":"3000002573"
+"type":"POI"
+"lat":39.7473
+"lon":-105.007999
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4352211500
+"radius":28.5
+"rank":18.0217
+"country":"US"
+"address":NULL
+"zip":NULL
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+8:{28 items
+"itemName":"Coors Field - Denver, CO"
+"id":"83769606"
+"cityID":"3000002573"
+"type":"POI"
+"lat":39.755878
+"lon":-104.994161
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4351809000
+"radius":28.5
+"rank":17.032974
+"country":"US"
+"address":NULL
+"zip":NULL
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+9:{28 items
+"itemName":"Sports Authority Field at Mile High - Denver, CO"
+"id":"20108"
+"cityID":"3000002573"
+"type":"POI"
+"lat":39.74339527
+"lon":-105.01773118
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4351714300
+"radius":28.5
+"rank":16.807655
+"country":"US"
+"address":NULL
+"zip":NULL
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+10:{28 items
+"itemName":"Cherry Creek North - Denver, CO"
+"id":"74000"
+"cityID":"3000002573"
+"type":"POI"
+"lat":39.720974
+"lon":-104.95215
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4351505400
+"radius":28.5
+"rank":16.318148
+"country":"US"
+"address":NULL
+"zip":NULL
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+11:{28 items
+"itemName":"Rocky Mountain Park - Denver, CO"
+"id":"178281"
+"cityID":"3000002573"
+"type":"POI"
+"lat":39.78082
+"lon":-105.03054
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4350660100
+"radius":28.5
+"rank":14.465639
+"country":"US"
+"address":NULL
+"zip":NULL
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+12:{28 items
+"itemName":"Stapleton Denver - Denver, CO"
+"id":"98944306"
+"cityID":"3000002573"
+"type":"POI"
+"lat":39.77294
+"lon":-104.86584
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4350543900
+"radius":28.5
+"rank":14.225741
+"country":"US"
+"address":NULL
+"zip":NULL
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+13:{28 items
+"itemName":"Hyatt Place Denver Airport - Denver, CO"
+"id":"56955"
+"cityID":"3000002573"
+"type":"HOTEL"
+"lat":39.769321
+"lon":-104.796317
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4470684200
+"radius":28.5
+"rank":11.810795
+"country":"US"
+"address":"16250 EAST 40TH AVENUE"
+"zip":"80011"
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+14:{28 items
+"itemName":"Hilton Denver City Center - Denver, CO"
+"id":"49251"
+"cityID":"3000002573"
+"type":"HOTEL"
+"lat":39.746109
+"lon":-104.990987
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4470471700
+"radius":28.5
+"rank":12.292086
+"country":"US"
+"address":"1701 CALIFORNIA STREET"
+"zip":"80202"
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+15:{28 items
+"itemName":"Magnolia Hotel Denver, A Tribute Portfolio Hotel - Denver, CO"
+"id":"48773"
+"cityID":"3000002573"
+"type":"HOTEL"
+"lat":39.74693
+"lon":-104.991963
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4469224400
+"radius":28.5
+"rank":11.810383
+"country":"US"
+"address":"818 17TH STREET"
+"zip":"80202"
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+16:{28 items
+"itemName":"Microtel Inn & Suites BY Wyndham Denver - Denver, CO"
+"id":"49346"
+"cityID":"3000002573"
+"type":"HOTEL"
+"lat":39.8111
+"lon":-104.771999
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4468881400
+"radius":28.5
+"rank":11.810303
+"country":"US"
+"address":"18600 EAST 63RD AVE"
+"zip":"80249"
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+17:{28 items
+"itemName":"Quality Inn & Suites Denver International Airport - Denver, CO"
+"id":"2012505"
+"cityID":"3000002573"
+"type":"HOTEL"
+"lat":39.821754
+"lon":-104.771899
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4468624400
+"radius":28.5
+"rank":11.810305
+"country":"US"
+"address":"6890 TOWER ROAD"
+"zip":"80249"
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+18:{28 items
+"itemName":"Hyatt Regency Denver At Colorado Convention Center - Denver, CO"
+"id":"6658605"
+"cityID":"3000002573"
+"type":"HOTEL"
+"lat":39.744004
+"lon":-104.992904
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4468500000
+"radius":28.5
+"rank":13.021263
+"country":"US"
+"address":"650 15TH STREET"
+"zip":"80202"
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+19:{28 items
+"itemName":"Clarion Hotel Denver Central - Denver, CO"
+"id":"57621"
+"cityID":"3000002573"
+"type":"HOTEL"
+"lat":39.7843
+"lon":-104.991299
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4468160000
+"radius":28.5
+"rank":11.884271
+"country":"US"
+"address":"200 WEST 48TH AVENUE"
+"zip":"80216"
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+20:{28 items
+"itemName":"Grand Hyatt Denver - Denver, CO"
+"id":"48247"
+"cityID":"3000002573"
+"type":"HOTEL"
+"lat":39.745905
+"lon":-104.989493
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4467942400
+"radius":28.5
+"rank":13.713488
+"country":"US"
+"address":"1750 WELTON STREET"
+"zip":"80202"
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+21:{28 items
+"itemName":"Courtyard BY Marriott Denver Airport At Gateway Park - Denver, CO"
+"id":"2043603"
+"cityID":"3000002573"
+"type":"HOTEL"
+"lat":39.773867
+"lon":-104.795995
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4467426300
+"radius":28.5
+"rank":11.810788
+"country":"US"
+"address":"4343 AIRPORT WAY"
+"zip":"80239"
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+22:{28 items
+"itemName":"Kimpton Hotel Monaco Denver - Denver, CO"
+"id":"48466"
+"cityID":"3000002573"
+"type":"HOTEL"
+"lat":39.747524
+"lon":-104.99246
+"proximity":0
+"savedTravelStartDate":NULL
+"savedTravelEndDate":NULL
+"cityName":"Denver"
+"stateCode":"CO"
+"provinceName":"Colorado"
+"score":4467268100
+"radius":28.5
+"rank":11.847967
+"country":"US"
+"address":"1717 CHAMPA STREET"
+"zip":"80202"
+"countryName":"United States"
+"countryCode":"US"
+"poiCategoryTypeId":0
+"poiCategoryName":NULL
+"poiID":NULL
+"seType":NULL
+"gmtOffset":-6
+"entered":"denver colorado"
+"highlightedName":NULL
+"fromSavedSearch":false
+}
+]
