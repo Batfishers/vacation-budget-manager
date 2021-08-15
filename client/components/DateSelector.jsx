@@ -25,7 +25,7 @@ export default function MaterialUIPickers(props) {
           variant="inline"
           format="MM/dd/yyyy"
           margin="normal"
-          id="date-picker-inline"
+          id={props.id}
           label= {props.dateText}
           value={selectedDate}
           onChange={handleDateChange}

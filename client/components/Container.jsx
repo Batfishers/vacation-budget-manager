@@ -63,7 +63,9 @@ function Container() {
         year:null
       },
       numberOfTravelers:null,
-      numberOfRooms:null
+      numberOfRooms:null,
+      airlineIsChecked: null,
+      hotelIsChecked: null
     };
 
     console.log(infoObj);
@@ -71,6 +73,37 @@ function Container() {
     //
     const userDestination = document.getElementById('destinationBox').value;
     infoObj.destination = userDestination;
+
+    const userLocation = document.getElementById('locationBox').value;
+    infoObj.startLocation = userLocation;
+    
+    const startDate = document.getElementById('startDate').value;
+    //console.log('this is the start date', startDate)
+    infoObj.startDate.month = startDate.slice(0,2);
+    infoObj.startDate.day = startDate.slice(3,5);
+    infoObj.startDate.year = startDate.slice(6,10);
+
+    const endDate = document.getElementById('endDate').value;
+    //console.log('this is the start date', startDate)
+    infoObj.endDate.month = endDate.slice(0,2);
+    infoObj.endDate.day = endDate.slice(3,5);
+    infoObj.endDate.year = endDate.slice(6,10);
+
+    infoObj.airlineIsChecked = state.airlineIsChecked;
+    infoObj.hotelIsChecked = state.hotelIsChecked;
+
+    //first find the division with the id tags 'airlineArray' and 'hotelsArray' and save these to consts
+    // perform (element).querySelector('input') and save to const. this gives us the input element inside each respective division
+    // const.value 
+    const airlineBox = document.getElementById('airlineArray');
+    const airlineInput = airlineBox.querySelector('input');
+    
+    const hotelBox = document.getElementById('hotelsArray');
+    const hotelInput = hotelBox.querySelector('input');
+
+    if (infoObj.airlineIsChecked === true) infoObj.numberOfTravelers = airlineInput.value;
+    if (infoObj.hotelIsChecked === true) infoObj.numberOfRooms = hotelInput.value
+
     console.log('below is new obj')
     console.log(infoObj);
     return infoObj;
@@ -87,8 +120,8 @@ function Container() {
       </Box>
       </div>
       <div id='dates'>
-        <DateSelector dateText = "Start Date" theDate={todaysDate()}/>
-        <DateSelector dateText = "End Date" theDate={todaysDate()}/>
+        <DateSelector id='startDate' dateText = "Start Date" theDate={todaysDate()}/>
+        <DateSelector id='endDate' dateText = "End Date" theDate={todaysDate()}/>
       </div>
       <div id='checkBoxes'>
         <Checkbox checkPrompt = "Include airfare?" randomLabel="Additional Information" onClickFunction={airlineFunc}/>
@@ -99,10 +132,10 @@ function Container() {
       </div>
       <div id='optionalParam'>
       <div id='airlineArray'>
-        <DropDown option= "Number of Passengers" key= 'airline'/>
+        <DropDown id='airlineDropDown'option= "Number of Passengers" key= 'airline'/>
       </div>
       <div id= 'hotelsArray'>
-        <DropDown option= "Number of Rooms" key= 'hotels'/>
+        <DropDown id='hotelDropDown'option= "Number of Rooms" key= 'hotels'/>
       </div>
       </div>
       </div>
