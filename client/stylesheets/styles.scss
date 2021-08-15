@@ -15,6 +15,9 @@ h1 {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 60%;
   height: 500px;
   border-style: solid;
@@ -36,7 +39,7 @@ h1 {
 
 #inputBoxes {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 10px;
 }
 
@@ -61,4 +64,15 @@ h1 {
 
 #hotelsArray {
   display: none;
+}
+
+#optionalParam {
+  display: flex;
+  justify-content: space-around;
+}
+
+#submitButton {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }

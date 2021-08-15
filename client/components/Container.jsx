@@ -1,8 +1,9 @@
 import React, { Component, useState } from 'react';
 import { TextField, Box, Paper } from '@material-ui/core';
 import Checkbox from './Checkbox.js';
-import DateSelector from './DateSelector.jsx'
-import DropDown from './DropDown.js'
+import DateSelector from './DateSelector.jsx';
+import DropDown from './DropDown.js';
+import Button from '@material-ui/core/Button';
 
 function Container() {
   const state = {
@@ -26,7 +27,7 @@ function Container() {
     }
 }
 
-const hotelFunc =() => {
+  const hotelFunc =() => {
     state.hotelIsChecked = !state.hotelIsChecked;
     const hotel = document.getElementById('hotelsArray')
     if(state.hotelIsChecked === true) {
@@ -40,17 +41,32 @@ const hotelFunc =() => {
         
     }
 }
+
+  const todaysDate = () => {
+    const today = new Date();
+    const day = String(today.getDate()).padStart(2, '0');
+    const month = String(today.getMonth() + 1).padStart(2,'0');
+    const year = today.getFullYear();
+    return `${year}-${month}-${day}`
+  }
+
+  const submitInfo =() => {
+    console.log('say hello')
+  }
+
+
   return (
     <div className='container'>
+      <div id='userInfo'>
       <div id='inputBoxes'>
       <Box display='flex' alignItems='center' width='auto' height ='15%'>
         Destination: <TextField id='destinationBox' label='Destination' variant='filled'></TextField>
-        Curent Location:<TextField id='locationBox' label='Location' variant='filled' type='password'></TextField>
+        Curent Location:<TextField id='locationBox' label='Location' variant='filled'></TextField>
       </Box>
       </div>
       <div id='dates'>
-        <DateSelector dateText = "Start Date"/>
-        <DateSelector dateText = "End Date"/>
+        <DateSelector dateText = "Start Date" theDate={todaysDate()}/>
+        <DateSelector dateText = "End Date" theDate={todaysDate()}/>
       </div>
       <div id='checkBoxes'>
         <Checkbox checkPrompt = "Include airfare?" randomLabel="Additional Information" onClickFunction={airlineFunc}/>
@@ -59,11 +75,17 @@ const hotelFunc =() => {
         </div>
         {/* Number of Travelers: <TextField id='destinationBox' label='Number' variant='filled' disabled id="standard-Disabled"></TextField> */}
       </div>
+      <div id='optionalParam'>
       <div id='airlineArray'>
-        <DropDown option= "Number of Travelers" key= 'airline'/>
+        <DropDown option= "Number of Passengers" key= 'airline'/>
       </div>
       <div id= 'hotelsArray'>
-        <DropDown option= "Number of Passengers" key= 'hotels'/>
+        <DropDown option= "Number of Rooms" key= 'hotels'/>
+      </div>
+      </div>
+      </div>
+      <div id='submitButton'>
+      <Button variant='contained' color='primary' onClick={submitInfo}>Submit</Button>
       </div>
     </div>
   )
