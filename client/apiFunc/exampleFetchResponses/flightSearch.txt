@@ -1,0 +1,203 @@
+{20 items
+"providerCoverage":"ALL"
+"itineraryType":"ROUND_TRIP"
+"cheapestFlightNonStop":false
+"pointOfSale":{3 items
+"requestSourceCountry":"US"
+"country":"US"
+"currency":"USD"
+}
+"airport":[...]12 items
+"airline":[...]6 items
+"equipment":[...]10 items
+"alliance":[...]3 items
+"cabinRestrictions":{4 items
+"F9":{...}1 item
+"B6":{...}1 item
+"UA":{...}1 item
+"NK":{...}1 item
+}
+"pricedItinerary":[...]40 items
+"slice":[...]40 items
+"segment":[...]60 items
+"rspMetaData":{...}5 items
+"baggage":[...]11 items
+"totalTripSummary":{...}17 items
+"filteredTripSummary":{18 items
+"itineraries":83
+"minTotalFare":73.47
+"maxTotalFare":286.51
+"minTotalFareWithTaxesAndFees":125.42
+"exactDateMinTotalFareWithTaxesAndFees":125.42
+"maxTotalFareWithTaxesAndFees":345.6
+"minDurationFareWithTaxesAndFees":345.6
+"minDuration":601
+"maxDuration":1455
+"minLayover":32
+"maxLayover":464
+"carrier":[2 items
+0:{2 items
+"code":"NK"
+"airport":[2 items
+0:{3 items
+"origAirport":"DEN"
+"destAirport":"EWR"
+"stops":[1 item
+0:{3 items
+"stop":1
+"lowestTotalFare":140.47
+"numberOfItineraries":4
+}
+]
+}
+1:{3 items
+"origAirport":"DEN"
+"destAirport":"LGA"
+"stops":[1 item
+0:{3 items
+"stop":1
+"lowestTotalFare":125.46
+"numberOfItineraries":1
+}
+]
+}
+]
+}
+1:{2 items
+"code":"UA"
+"airport":[1 item
+0:{3 items
+"origAirport":"DEN"
+"destAirport":"LGA"
+"stops":[1 item
+0:{3 items
+"stop":1
+"lowestTotalFare":295.6
+"numberOfItineraries":3
+}
+]
+}
+]
+}
+]
+"stop":[1 item
+0:{3 items
+"numberOfStops":1
+"lowestTotalFare":{2 items
+"currency":"USD"
+"amount":125.42
+}
+"numberOfItineraries":83
+}
+]
+"airline":[2 items
+0:{4 items
+"code":"UA"
+"lowestTotalFare":{2 items
+"currency":"USD"
+"amount":295.6
+}
+"numItineraries":3
+"sponsored":false
+}
+1:{4 items
+"code":"NK"
+"lowestTotalFare":{2 items
+"currency":"USD"
+"amount":125.42
+}
+"numItineraries":5
+"sponsored":false
+}
+]
+"airport":[2 items
+0:{4 items
+"origin":"DEN"
+"destination":"LGA"
+"lowestTotalFare":{2 items
+"currency":"USD"
+"amount":345.6
+}
+"numItineraries":44
+}
+1:{4 items
+"origin":"DEN"
+"destination":"EWR"
+"lowestTotalFare":{2 items
+"currency":"USD"
+"amount":125.42
+}
+"numItineraries":27
+}
+]
+"layoverAirport":[12 items
+0:{3 items
+"code":"ATL"
+"name":"Hartsfield-Jackson Atlanta Intl Airport"
+"lowestTotalFare":{2 items
+"currency":"USD"
+"amount":145.63
+}
+}
+1:{3 items
+"code":"CLT"
+"name":"Charlotte Douglas Intl Airport"
+"lowestTotalFare":{2 items
+"currency":"USD"
+"amount":0
+}
+}
+2:{3 items
+"code":"DFW"
+"name":"Dallas/Fort Worth Intl Airport"
+"lowestTotalFare":{2 items
+"currency":"USD"
+"amount":0
+}
+}
+3:{3 items
+"code":"DTW"
+"name":"Metropolitan Wayne County Airport"
+"lowestTotalFare":{2 items
+"currency":"USD"
+"amount":0
+}
+}
+4:{3 items
+"code":"FLL"
+"name":"Hollywood Intl Airport"
+"lowestTotalFare":{2 items
+"currency":"USD"
+"amount":125.42
+}
+}
+5:{3 items
+"code":"IAD"
+"name":"Washington Dulles Intl Airport"
+"lowestTotalFare":{2 items
+"currency":"USD"
+"amount":295.6
+}
+}
+6:{3 items
+"code":"IAH"
+"name":"George Bush Intercontinental Airport"
+"lowestTotalFare":{2 items
+"currency":"USD"
+"amount":295.6
+}
+}
+7:{...}3 items
+8:{...}3 items
+9:{...}3 items
+10:{...}3 items
+11:{...}3 items
+]
+"lowestInterlineTotalFare":135.64
+"minTotalFareWithTaxesAndFeesNonSplit":125.42
+}
+"sliceSummary":[...]1 item
+"expressDeal":NULL
+"merchandisingLabels":[...]4 items
+"brandReference":[...]5 items
+}
