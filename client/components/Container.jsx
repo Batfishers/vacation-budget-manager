@@ -17,12 +17,10 @@ function Container() {
     state.airlineIsChecked = !state.airlineIsChecked;
     const airline = document.getElementById('airlineArray')
     if(state.airlineIsChecked === true) {
-        console.log('airline check on')
         airline.style.display = 'block'
         //airlineArray.push(<DropDown option= "Number of Travelers" key= 'airline'/>)
         console.log(airlineArray)
     } else {
-        console.log('airline check off')
         airline.style.display = 'none'
     }
 }
@@ -31,12 +29,9 @@ function Container() {
     state.hotelIsChecked = !state.hotelIsChecked;
     const hotel = document.getElementById('hotelsArray')
     if(state.hotelIsChecked === true) {
-        console.log('hotel checked on');
         //hotelsArray.push(<DropDown option= "Number of Passengers" key= 'hotels'/>)
         hotel.style.display = 'block'
-        console.log(hotelsArray)
     } else {
-        console.log('hotel checked off')
         hotel.style.display = 'none'
         
     }
@@ -51,7 +46,34 @@ function Container() {
   }
 
   const submitInfo =() => {
+    //create and return object with user information
+    //edge case to check if they try to submit with hotels/airfare checked but options not selected
     console.log('say hello')
+    const infoObj = {
+      destination:null,
+      startLocation:null,
+      startDate: {
+        month:null,
+        day:null,
+        year:null,
+      },
+      endDate: {
+        month:null,
+        day:null,
+        year:null
+      },
+      numberOfTravelers:null,
+      numberOfRooms:null
+    };
+
+    console.log(infoObj);
+    //const userDestination = document.getElementById('destinationBox')
+    //
+    const userDestination = document.getElementById('destinationBox').value;
+    infoObj.destination = userDestination;
+    console.log('below is new obj')
+    console.log(infoObj);
+    return infoObj;
   }
 
 
@@ -61,7 +83,7 @@ function Container() {
       <div id='inputBoxes'>
       <Box display='flex' alignItems='center' width='auto' height ='15%'>
         Destination: <TextField id='destinationBox' label='Destination' variant='filled'></TextField>
-        Curent Location:<TextField id='locationBox' label='Location' variant='filled'></TextField>
+        Starting Location:<TextField id='locationBox' label='Location' variant='filled'></TextField>
       </Box>
       </div>
       <div id='dates'>
