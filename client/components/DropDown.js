@@ -43,7 +43,7 @@ export default function ControlledOpenSelect(props) {
         <InputLabel id="demo-controlled-open-select-label"></InputLabel>
         <Select
           labelId="demo-controlled-open-select-label"
-          id="demo-controlled-open-select"
+          id= 'Select Tag'
           open={open}
           onClose={handleClose}
           onOpen={handleOpen}
@@ -53,14 +53,14 @@ export default function ControlledOpenSelect(props) {
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
-          <MenuItem value={1}>One</MenuItem>
-          <MenuItem value={2}>Two</MenuItem>
-          <MenuItem value={3}>Three</MenuItem>
-          <MenuItem value={4}>Four</MenuItem>
-          <MenuItem value={5}>Five</MenuItem>
-          <MenuItem value={6}>Six</MenuItem>
-          <MenuItem value={7}>Seven</MenuItem>
-          <MenuItem value={8}>Eight</MenuItem>
+          <MenuItem id= {props.id} value={1}>One</MenuItem>
+          <MenuItem id= {props.id} value={2}>Two</MenuItem>
+          <MenuItem id= {props.id} value={3}>Three</MenuItem>
+          <MenuItem id= {props.id} value={4}>Four</MenuItem>
+          <MenuItem id= {props.id} value={5}>Five</MenuItem>
+          <MenuItem id= {props.id} value={6}>Six</MenuItem>
+          <MenuItem id= {props.id} value={7}>Seven</MenuItem>
+          <MenuItem id= {props.id} value={8}>Eight</MenuItem>
 
         </Select>
       </FormControl>
