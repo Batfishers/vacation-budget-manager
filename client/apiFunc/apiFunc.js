@@ -32,8 +32,6 @@ async function getAirfareSummary(userInputs) {
       }
     }).then((res => res.json()));
     // totalFare of pricedItinerary per traveler. Can be optimized to show airline chosen by getting one way info for destination flight and return flight
-    console.log(flightSearch);
-    // flightSearch.pricedItenerary[Math.floor(flightSearch.pricedItenerary.length / 2)] is the median
     const airfareSummary = {
       currency: flightSearch.pointOfSale.currency,
       exactDateMinTotalFareWithTaxesAndFees: flightSearch.filteredTripSummary.exactDateMinTotalFareWithTaxesAndFees,
@@ -72,39 +70,58 @@ async function getHotelPriceSummary(userInputs) {
   }
 }
 
-async function getLocationId(locationString) {
+async function getHotelLocationId(locationString) {
   // convert spaces to %20 and commas to %2C
-const urlEncodedLocation = locationString.replace(/,/g, '%2C').replace(/ /, '%20');
-try {
-  const locationSearch = await fetch(`https://priceline-com-provider.p.rapidapi.com/v1/hotels/locations?name=${urlEncodedLocation}`, {
-    "method": "GET",
-    "headers": {
-      "x-rapidapi-key": "fb0eb671b1msh36962598bcbff78p197cddjsn9955af070c1e",
-      "x-rapidapi-host": "priceline-com-provider.p.rapidapi.com"
+  const urlEncodedLocation = locationString.replace(/,/g, '%2C').replace(/ /, '%20');
+  try {
+    const locationSearch = await fetch(`https://priceline-com-provider.p.rapidapi.com/v1/hotels/locations?name=${urlEncodedLocation}`, {
+      "method": "GET",
+      "headers": {
+        "x-rapidapi-key": "fb0eb671b1msh36962598bcbff78p197cddjsn9955af070c1e",
+        "x-rapidapi-host": "priceline-com-provider.p.rapidapi.com"
+      }
+    }).then((res => res.json()));
+    const output = {};
+    // for hotelId, return the cityID (add itemName later) of the first element with the type: CITY
+    for (const object of locationSearch) {
+      if (object.type === 'CITY') {
+        output.hotelSearchLocation = object.itemName;
+        output.hotelLocationId = object.cityID;
+        break;
+      } 
     }
-  }).then((res => res.json()));
-  const output = {};
-  // for hotelId, return the cityID (add itemName later) of the first element with the type: CITY
-  for (const object of locationSearch) {
-    if (object.type === 'CITY') {
-      output.hotelSearchLocation = object.itemName;
-      output.hotelLocationId = object.cityID;
-      break;
-    } 
+    return output;
+  } catch(e) {
+    console.log(e);
+    return 'Error getting hotel location data from API.'
   }
-  // for airportCityId, return the id (add itemName later) of the first element with the type: AIRPORT
-  for (const object of locationSearch) {
-    if (object.type === 'AIRPORT') {
-      output.flightSearchLocation = object.itemName;
-      output.flightLocationId = object.id;
-      break;
-    } 
-  }
-  return output;
-} catch(e) {
-  console.log(e);
-  return 'Error getting location data from API.'
 }
+
+async function getFlightLocationId(locationString) {
+  // convert spaces to %20 and commas to %2C
+  const urlEncodedLocation = locationString.replace(/,/g, '%2C').replace(/ /, '%20');
+  try {
+    const locationSearch = await fetch(`https://priceline-com-provider.p.rapidapi.com/v1/flights/locations?name=${urlEncodedLocation}`, {
+      "method": "GET",
+      "headers": {
+        "x-rapidapi-key": "fb0eb671b1msh36962598bcbff78p197cddjsn9955af070c1e",
+        "x-rapidapi-host": "priceline-com-provider.p.rapidapi.com"
+      }
+    }).then((res => res.json()));
+    const output = {};
+    // for airportCityId, return the id (add itemName later) of the first element with the type: AIRPORT
+    for (const object of locationSearch) {
+      if (object.type === 'AIRPORT') {
+        output.flightSearchLocation = object.itemName;
+        output.flightLocationId = object.id;
+        break;
+      } 
+    }
+    return output;
+  } catch(e) {
+    console.log(e);
+    return 'Error getting flight location data from API.'
+  }
 }
 
 async function apiFunc(userInputs) {
@@ -123,21 +140,43 @@ async function apiFunc(userInputs) {
   //     year: 2021
   //   },
   //   numberOfTravelers: 4,
-  //   numberOfRooms: 2
+  //   numberOfRooms: 2,
+  //   airlineIsChecked: true,
+  //   hotelIsChecked: true
   // }
   // get the destinationIds and startLocationIds (at the same time using Promise.all)
-  const [destinationIdObj, startLocationIdObj] = await Promise.all([getLocationId(userInputs.destination), getLocationId(userInputs.startLocation)]);
+  const [
+    destinationHotelIdObj, 
+    startLocationFlightIdObj, 
+    destinationFlightIdObj
+  ] = await Promise.all([
+    getHotelLocationId(userInputs.destination), 
+    getFlightLocationId(userInputs.startLocation), 
+    getFlightLocationId(userInputs.destination)
+  ]);
 
-  userInputs.hotelDestinationId = destinationIdObj.hotelLocationId;
-  userInputs.flightDestinationId = destinationIdObj.flightLocationId;
-  userInputs.flightStartLocationId = startLocationIdObj.flightLocationId;
-
-  const hotelPriceSummary = await getHotelPriceSummary(userInputs);
-  const airfareSummary = await getAirfareSummary(userInputs);
+  userInputs.hotelDestinationId = destinationHotelIdObj.hotelLocationId;
+  userInputs.flightStartLocationId = startLocationFlightIdObj.flightLocationId;
+  userInputs.flightDestinationId = destinationFlightIdObj.flightLocationId;
+  let airfareSummary;
+  let hotelPriceSummary;
+  if (userInputs.airlineIsChecked && userInputs.hotelIsChecked) {
+    [airfareSummary, hotelPriceSummary] = await Promise.all([getAirfareSummary(userInputs), getHotelPriceSummary(userInputs)]);
+  } else if (userInputs.airlineIsChecked) {
+    airfareSummary = await getAirfareSummary(userInputs);
+  } else if (userInputs.hotelPriceSummary) {
+    hotelPriceSummary = await getHotelPriceSummary(userInputs);
+  }
+  
 
   return {
-    airfareSummary,
+    searchLocations: {
+      hotelSearchCityName: destinationHotelIdObj.hotelSearchLocation,
+      startAirportName: startLocationFlightIdObj.flightSearchLocation,
+      destinationAirportName: destinationFlightIdObj.flightSearchLocation,
+    },
     hotelPriceSummary,
+    airfareSummary,
   }
 }
 
