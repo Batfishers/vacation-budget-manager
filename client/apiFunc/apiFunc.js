@@ -33,9 +33,11 @@ async function getAirfareSummary(userInputs) {
     }).then((res => res.json()));
     // totalFare of pricedItinerary per traveler. Can be optimized to show airline chosen by getting one way info for destination flight and return flight
     console.log(flightSearch);
+    // flightSearch.pricedItenerary[Math.floor(flightSearch.pricedItenerary.length / 2)] is the median
     const airfareSummary = {
       currency: flightSearch.pointOfSale.currency,
       exactDateMinTotalFareWithTaxesAndFees: flightSearch.filteredTripSummary.exactDateMinTotalFareWithTaxesAndFees,
+      medianTotalFareWithTaxesAndFees: flightSearch.pricedItinerary[Math.floor(flightSearch.pricedItinerary.length / 2)].pricingInfo.totalFare,
       maxTotalFareWithTaxesAndFees: flightSearch.filteredTripSummary.maxTotalFareWithTaxesAndFees
     }
     return airfareSummary;
