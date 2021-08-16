@@ -9,10 +9,12 @@ import apiFunc from '../apiFunc/apiFunc.js';
 import CustomizedTables from './DataTable.jsx'
 
 function Container() {
+
+  const [submitState, setSubmit] = useState(false);
+
   const state = {
     airlineIsChecked: false,
     hotelIsChecked: false,
-    submitStatus: false,
     resultsObject: {
       airfarePrice: {
         low: null,
@@ -155,7 +157,7 @@ function Container() {
 
     handleApiResponse(apiResults);
 
-    state.submitStatus = true;
+    setSubmit(true);
 
     return infoObj;
   }
@@ -194,7 +196,7 @@ function Container() {
         <Button variant='contained' color='primary' onClick={submitInfo}>Submit</Button>
       </div>
       <div id='dataTable'>
-        {state.submitStatus === true ? <CustomizedTables apiResults={state.resultsObject}/> : null}
+        {submitState === true && <CustomizedTables apiResults={state.resultsObject}/> }
       </div>
     </div>
   )
