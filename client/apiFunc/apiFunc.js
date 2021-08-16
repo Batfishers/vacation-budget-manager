@@ -15,7 +15,9 @@ const userInputs = {
     year: ****
   },
   numberOfTravelers: number,
-  numberOfRooms: number
+  numberOfRooms: number,
+  airlineIsChecked: boolean,
+  hotelIsChecked: boolean
 }
 */
 
@@ -103,24 +105,24 @@ try {
 }
 }
 
-async function apiFunc() {
-  // when this function is merged into the project files, userInputs needs to be a parameter
-  const userInputs = {
-    destination: 'Denver, Colorado',
-    startLocation: 'New Orleans',
-    startDate: {
-      month: 11,
-      day: 5,
-      year: 2021
-    },
-    endDate: {
-      month: 11,
-      day: 7,
-      year: 2021
-    },
-    numberOfTravelers: 4,
-    numberOfRooms: 2
-  }
+async function apiFunc(userInputs) {
+  // TEST userInputs
+  // const userInputs = {
+  //   destination: 'Denver, Colorado',
+  //   startLocation: 'New Orleans',
+  //   startDate: {
+  //     month: 11,
+  //     day: 5,
+  //     year: 2021
+  //   },
+  //   endDate: {
+  //     month: 11,
+  //     day: 7,
+  //     year: 2021
+  //   },
+  //   numberOfTravelers: 4,
+  //   numberOfRooms: 2
+  // }
   // get the destinationIds and startLocationIds (at the same time using Promise.all)
   const [destinationIdObj, startLocationIdObj] = await Promise.all([getLocationId(userInputs.destination), getLocationId(userInputs.startLocation)]);
 

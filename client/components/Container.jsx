@@ -1,9 +1,11 @@
 import React, { Component, useState } from 'react';
 import { TextField, Box, Paper } from '@material-ui/core';
+import 'regenerator-runtime/runtime';
 import Checkbox from './Checkbox.js';
 import DateSelector from './DateSelector.jsx';
 import DropDown from './DropDown.js';
 import Button from '@material-ui/core/Button';
+import apiFunc from '../apiFunc/apiFunc.js';
 
 function Container() {
   const state = {
@@ -45,7 +47,7 @@ function Container() {
     return `${year}-${month}-${day}`
   }
 
-  const submitInfo =() => {
+  const submitInfo = async () => {
     //create and return object with user information
     //edge case to check if they try to submit with hotels/airfare checked but options not selected
     console.log('say hello')
@@ -106,6 +108,10 @@ function Container() {
 
     console.log('below is new obj')
     console.log(infoObj);
+    
+    // call the imported apiFunc to get the cost estimate results from the priceline API
+    const apiResults = await apiFunc(infoObj);
+    console.log('below is apiResults', apiResults);
     return infoObj;
   }
 
