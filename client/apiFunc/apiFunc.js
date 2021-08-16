@@ -15,7 +15,9 @@ const userInputs = {
     year: ****
   },
   numberOfTravelers: number,
-  numberOfRooms: number
+  numberOfRooms: number,
+  airlineIsChecked: boolean,
+  hotelIsChecked: boolean
 }
 */
 
@@ -31,9 +33,11 @@ async function getAirfareSummary(userInputs) {
     }).then((res => res.json()));
     // totalFare of pricedItinerary per traveler. Can be optimized to show airline chosen by getting one way info for destination flight and return flight
     console.log(flightSearch);
+    // flightSearch.pricedItenerary[Math.floor(flightSearch.pricedItenerary.length / 2)] is the median
     const airfareSummary = {
       currency: flightSearch.pointOfSale.currency,
       exactDateMinTotalFareWithTaxesAndFees: flightSearch.filteredTripSummary.exactDateMinTotalFareWithTaxesAndFees,
+      medianTotalFareWithTaxesAndFees: flightSearch.pricedItinerary[Math.floor(flightSearch.pricedItinerary.length / 2)].pricingInfo.totalFare,
       maxTotalFareWithTaxesAndFees: flightSearch.filteredTripSummary.maxTotalFareWithTaxesAndFees
     }
     return airfareSummary;
@@ -103,24 +107,24 @@ try {
 }
 }
 
-async function apiFunc() {
-  // when this function is merged into the project files, userInputs needs to be a parameter
-  const userInputs = {
-    destination: 'Denver, Colorado',
-    startLocation: 'New Orleans',
-    startDate: {
-      month: 11,
-      day: 5,
-      year: 2021
-    },
-    endDate: {
-      month: 11,
-      day: 7,
-      year: 2021
-    },
-    numberOfTravelers: 4,
-    numberOfRooms: 2
-  }
+async function apiFunc(userInputs) {
+  // TEST userInputs
+  // const userInputs = {
+  //   destination: 'Denver, Colorado',
+  //   startLocation: 'New Orleans',
+  //   startDate: {
+  //     month: 11,
+  //     day: 5,
+  //     year: 2021
+  //   },
+  //   endDate: {
+  //     month: 11,
+  //     day: 7,
+  //     year: 2021
+  //   },
+  //   numberOfTravelers: 4,
+  //   numberOfRooms: 2
+  // }
   // get the destinationIds and startLocationIds (at the same time using Promise.all)
   const [destinationIdObj, startLocationIdObj] = await Promise.all([getLocationId(userInputs.destination), getLocationId(userInputs.startLocation)]);
 
