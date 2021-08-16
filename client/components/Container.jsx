@@ -6,12 +6,52 @@ import DateSelector from './DateSelector.jsx';
 import DropDown from './DropDown.js';
 import Button from '@material-ui/core/Button';
 import apiFunc from '../apiFunc/apiFunc.js';
+import CustomizedTables from './DataTable.jsx'
 
 function Container() {
   const state = {
     airlineIsChecked: false,
-    hotelIsChecked: false
-}
+    hotelIsChecked: false,
+    submitStatus: false,
+    resultsObject: {
+      airfarePrice: {
+        low: null,
+        median: null,
+        high: null,
+      },
+      hotelPrice: {
+        low: null,
+        median: null,
+        high: null,
+      },
+      totalPrice: {
+        low: null,
+        median: null,
+        high: null,
+      }
+    }
+  }
+
+  const handleApiResponse = (response) => {
+
+    const { airfarePrice, hotelPrice, totalPrice } = state.resultsObject
+
+    airfarePrice.low = response.airfareSummary.exactDateMinTotalFareWithTaxesAndFees;
+    airfarePrice.high = response.airfareSummary.maxTotalFareWithTaxesAndFees;
+    airfarePrice.median = response.airfareSummary.medianTotalFareWithTaxesAndFees;
+
+    hotelPrice.low = parseInt(response.hotelPriceSummary.lowPrice, 10);
+    hotelPrice.high = parseInt(response.hotelPriceSummary.highPrice, 10);
+    hotelPrice.median = parseInt(response.hotelPriceSummary.medianPrice, 10);
+
+    totalPrice.low = airfarePrice.low + hotelPrice.low;
+    totalPrice.high = airfarePrice.high + hotelPrice.high;
+    totalPrice.median = airfarePrice.median + hotelPrice.median;
+
+    console.log('Storing Results from API:');
+    console.log(state.resultsObject);
+  }
+
   //let airlineArray = ['poop'];
   //let hotelsArray = ['pee'];
   //conditional logic here or new components for what to display when checkbox is selected
@@ -112,6 +152,11 @@ function Container() {
     // call the imported apiFunc to get the cost estimate results from the priceline API
     const apiResults = await apiFunc(infoObj);
     console.log('below is apiResults', apiResults);
+
+    handleApiResponse(apiResults);
+
+    state.submitStatus = true;
+
     return infoObj;
   }
 
@@ -146,7 +191,10 @@ function Container() {
       </div>
       </div>
       <div id='submitButton'>
-      <Button variant='contained' color='primary' onClick={submitInfo}>Submit</Button>
+        <Button variant='contained' color='primary' onClick={submitInfo}>Submit</Button>
+      </div>
+      <div id='dataTable'>
+        {state.submitStatus === true ? <CustomizedTables apiResults={state.resultsObject}/> : null}
       </div>
     </div>
   )
