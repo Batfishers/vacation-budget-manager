@@ -11,6 +11,23 @@ import CustomizedTables from './DataTable.jsx'
 function Container() {
 
   const [submitState, setSubmit] = useState(false);
+  const [resultsObject, setResults] =useState({
+    airfarePrice: {
+      low: null,
+      median: null,
+      high: null,
+    },
+    hotelPrice: {
+      low: null,
+      median: null,
+      high: null,
+    },
+    totalPrice: {
+      low: null,
+      median: null,
+      high: null,
+    }
+  })
 
   const state = {
     airlineIsChecked: false,
@@ -36,22 +53,23 @@ function Container() {
 
   const handleApiResponse = (response) => {
 
-    const { airfarePrice, hotelPrice, totalPrice } = state.resultsObject
+    const { airfarePrice, hotelPrice, totalPrice } = { ...resultsObject }
 
-    airfarePrice.low = response.airfareSummary.exactDateMinTotalFareWithTaxesAndFees;
-    airfarePrice.high = response.airfareSummary.maxTotalFareWithTaxesAndFees;
-    airfarePrice.median = response.airfareSummary.medianTotalFareWithTaxesAndFees;
+    airfarePrice.low = Math.floor(response.airfareSummary.exactDateMinTotalFareWithTaxesAndFees);
+    airfarePrice.high = Math.floor(response.airfareSummary.maxTotalFareWithTaxesAndFees);
+    airfarePrice.median = Math.floor(response.airfareSummary.medianTotalFareWithTaxesAndFees);
 
     hotelPrice.low = parseInt(response.hotelPriceSummary.lowPrice, 10);
     hotelPrice.high = parseInt(response.hotelPriceSummary.highPrice, 10);
     hotelPrice.median = parseInt(response.hotelPriceSummary.medianPrice, 10);
 
-    totalPrice.low = airfarePrice.low + hotelPrice.low;
-    totalPrice.high = airfarePrice.high + hotelPrice.high;
-    totalPrice.median = airfarePrice.median + hotelPrice.median;
+    totalPrice.low = Math.floor(airfarePrice.low + hotelPrice.low);
+    totalPrice.high = Math.floor(airfarePrice.high + hotelPrice.high);
+    totalPrice.median = Math.floor(airfarePrice.median + hotelPrice.median);
 
+    setResults({airfarePrice, hotelPrice, totalPrice});
     console.log('Storing Results from API:');
-    console.log(state.resultsObject);
+    console.log(resultsObject);
   }
 
   //let airlineArray = ['poop'];
@@ -200,7 +218,7 @@ function Container() {
         <Button variant='contained' color='primary' onClick={submitInfo}>Submit</Button>
       </div>
       <div id='dataTable'>
-        {submitState === true && <CustomizedTables apiResults={state.resultsObject}/> }
+        {submitState === true && <CustomizedTables apiResults={resultsObject}/> }
       </div>
     </div>
     </div>

@@ -41,10 +41,16 @@ export default function CustomizedTables(props) {
   }
 
   const rows = [
-    createData('Hotel', props.hotelPrice.low, props.hotelPrice.median, props.hotelPrice.high),
-    createData('Airfare', props.airfarePrice.low, props.airfarePrice.median, props.airfarePrice.high),
-    createData('Total', props.totalPrice.low, props.totalPrice.median, props.totalPrice.high),
+    createData('Hotel', props.apiResults.hotelPrice.low, props.apiResults.hotelPrice.median, props.apiResults.hotelPrice.high),
+    createData('Airfare', props.apiResults.airfarePrice.low, props.apiResults.airfarePrice.median, props.apiResults.airfarePrice.high),
+    createData('Total', props.apiResults.totalPrice.low, props.apiResults.totalPrice.median, props.apiResults.totalPrice.high),
   ];
+
+  // const rows = [
+  //   createData('Hotel', 1, 3, 2),
+  //   createData('Airfare', 6, 8, 3),
+  //   createData('Total', 5, 2, 9),
+  // ];
 
   return (
     <TableContainer component={Paper}>
