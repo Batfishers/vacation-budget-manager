@@ -164,6 +164,10 @@ function Container() {
 
 
   return (
+    <div className='page'>
+      <h1>
+        Vacation Budget Manager
+      </h1>
     <div className='container'>
       <div id='userInfo'>
       <div id='inputBoxes'>
@@ -198,6 +202,7 @@ function Container() {
       <div id='dataTable'>
         {submitState === true && <CustomizedTables apiResults={state.resultsObject}/> }
       </div>
+    </div>
     </div>
   )
 }
