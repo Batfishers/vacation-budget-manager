@@ -117,6 +117,10 @@ function Container() {
 
 
   return (
+    <div className='page'>
+      <h1>
+        Vacation Budget Manager
+      </h1>
     <div className='container'>
       <div id='userInfo'>
       <div id='inputBoxes'>
@@ -148,6 +152,7 @@ function Container() {
       <div id='submitButton'>
       <Button variant='contained' color='primary' onClick={submitInfo}>Submit</Button>
       </div>
+    </div>
     </div>
   )
 }
