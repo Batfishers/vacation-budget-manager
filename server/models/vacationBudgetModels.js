@@ -56,12 +56,12 @@ const userSchema = new Schema({
           destinationAirportName: String,
         },
         hotelPriceSummary: {
-          lowPrice: Number,
-          medianPrice: Number,
-          highPrice: Number
+          lowPrice: String,
+          medianPrice: String,
+          highPrice: String
         },
         airfareSummary: {
-          currency: Number,
+          currency: String,
           exactDateMinTotalFareWithTaxesAndFees: Number,
           medianTotalFareWithTaxesAndFees: Number,
           maxTotalFareWithTaxesAndFees: Number

@@ -9,12 +9,11 @@ app.use(express.urlencoded({ extended: true }));
 app.post("/testdb", (req, res) => {
   models.Test.create(req.body)
     .then(() => {
-      return res.status(200).send('Added to CD. Check cluster')
+      return res.status(200).send('Added to DB. Check cluster')
     })
     .catch((err) => {
       return res.status(400).send('Error in testdb' + JSON.stringify(err));
     })
-
 });
 
 app.use("/build", express.static(path.join(__dirname, "../build")));
