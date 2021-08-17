@@ -7,6 +7,7 @@ const userController = require('./controllers/userController');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// this is just for testing the database
 app.post('/testdb', (req, res) => {
   models.Test.create(req.body)
     .then(() => {
@@ -17,6 +18,7 @@ app.post('/testdb', (req, res) => {
     })
 });
 
+// returns an object if user successfully added to database
 app.post('/signup', userController.createUser, (req, res) => {
   return res.status(200).json({success: true});
 });
@@ -24,8 +26,10 @@ app.post('/signup', userController.createUser, (req, res) => {
 app.post('/login', userController.verifyUser, (req, res) => {
   let responseToClient;
   if (res.locals.verifyResponse) {
+    // returns a string to display to the user if there was an issue verifying the password.
     responseToClient = res.locals.verifyResponse;
   } else {
+    // Returns an object if authentication was successful
     responseToClient = {
       success: true
     };
