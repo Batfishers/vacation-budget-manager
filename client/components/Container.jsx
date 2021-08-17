@@ -10,7 +10,7 @@ import CustomizedTables from './DataTable.jsx'
 
 function Container() {
 
-  const [submitState, setSubmit] = useState(false);
+  const [submitState, setSubmit] = useState(false); 
   const [hotelName, setHotelName] = useState(null);
   const [airportStart, setAirportStart] = useState(null);
   const [airportEnd, setAirportEnd] = useState(null);
@@ -37,7 +37,7 @@ function Container() {
     hotelIsChecked: false,
     }
   
-
+  // Takes the results from the apiFunc function and parses the information into states 
   const handleApiResponse = (response) => {
 
     const { airfarePrice, hotelPrice, totalPrice } = { ...resultsObject }
@@ -163,8 +163,10 @@ function Container() {
     const apiResults = await apiFunc(infoObj);
     console.log('below is apiResults', apiResults);
 
+    // pass the results of apiFunc into our handle function that will parse and set the states of relevant variables
     handleApiResponse(apiResults);
 
+    // changes the state of the Submit button from false to true for conditional rendering
     setSubmit(true);
 
     return infoObj;
@@ -182,7 +184,7 @@ function Container() {
     <div className='container'>
       <div id='userInfo'>
         <div id='inputBoxes'>
-          <Box display='flex' aligntems='center' width='auto' height ='15%'>
+          <Box display='flex' aligntems='center' width='auto' height ='15%'> 
             Destination: <TextField id='destinationBox' label='Destination' variant='filled'></TextField>
           </Box>
           <Box display='flex' alignItems='center' width='auto' height ='15%'>
@@ -198,7 +200,6 @@ function Container() {
           <div id='boxTwo'>
           <Checkbox checkPrompt = "Include hotels?" randomLabel={""} onClickFunction={hotelFunc}/>
         </div>
-        {/* Number of Travelers: <TextField id='destinationBox' label='Number' variant='filled' disabled id="standard-Disabled"></TextField> */}
       </div>
       <div id='optionalParam'>
         <div id='airlineArray'>
