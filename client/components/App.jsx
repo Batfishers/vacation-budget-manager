@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-// import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
+import Container from './Container.jsx';
+import Navigation from './Navigation.js';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Login from './login.js';
 
+function App() {
 
-class App extends Component {
-  constructor(props) {
-    super(props);
+  return (
+    <Router>
+      <Navigation />
+        <Switch>
+          <Route path='/login' component={Login}/>
+          <Route path='/' component={Container}/>
+        </Switch>
 
-  }
-  render() {
-    return (
-      <div>
-        <div>
-          Literally Anything Will Make Me Happy
-        </div>
-      </div>
-    )
-  }
+    </Router>
+  )
 }
 
 export default App;

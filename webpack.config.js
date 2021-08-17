@@ -40,6 +40,7 @@ module.exports = {
   },
   devServer: {
     publicPath: '/build/',
+    historyApiFallback: true,
     proxy: {
       '/': 'http://localhost:3000'
     }

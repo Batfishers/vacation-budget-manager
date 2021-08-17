@@ -1,0 +1,204 @@
+Input: name=New%20York
+
+[8 items
+  0:{23 items
+    "type":"AIRPORT"
+    "itemName":"New York City, NY - All Airports (NYC)"
+    "id":"NYC"
+    "stateCode":"NY"
+    "cityID":"1365100023"
+    "cityCode":"NYC"
+    "cityName":"New York City"
+    "countryCode":"US"
+    "country":"US"
+    "provinceName":"New York"
+    "entered":"New York"
+    "gmtOffset":"-4.0"
+    "timeZoneName":"America/New_York"
+    "lat":0
+    "lon":0
+    "poiCategoryTypeId":0
+    "displayName":"New York City, NY - All Airports (NYC)"
+    "rank":99.98999
+    "score":4232.6133
+    "proximity":0
+    "airportCode":NULL
+    "timeZoneID":22
+    "fromSavedSearch":false
+  }
+  1:{23 items
+    "type":"AIRPORT"
+    "itemName":"New York City, NY - LaGuardia Airport (LGA)"
+    "id":"LGA"
+    "stateCode":"NY"
+    "cityID":"1365100023"
+    "cityCode":"NYC"
+    "cityName":"New York City"
+    "countryCode":"US"
+    "country":"US"
+    "provinceName":"New York"
+    "entered":"New York"
+    "gmtOffset":"-4.0"
+    "timeZoneName":"America/New_York"
+    "lat":40.78050025155439
+    "lon":-73.8747716814288
+    "poiCategoryTypeId":0
+    "displayName":"New York City, NY - LaGuardia Airport (LGA)"
+    "rank":99.96463
+    "score":4232.417
+    "proximity":0
+    "airportCode":NULL
+    "timeZoneID":22
+    "fromSavedSearch":false
+  }
+  2:{23 items
+    "type":"AIRPORT"
+    "itemName":"Buffalo, NY - Buffalo Niagara Intl Airport (BUF)"
+    "id":"BUF"
+    "stateCode":"NY"
+    "cityID":"1361100019"
+    "cityCode":"BUF"
+    "cityName":"Buffalo"
+    "countryCode":"US"
+    "country":"US"
+    "provinceName":"New York"
+    "entered":"New York"
+    "gmtOffset":"-4.0"
+    "timeZoneName":"America/New_York"
+    "lat":42.940379251859056
+    "lon":-78.72967226269031
+    "poiCategoryTypeId":0
+    "displayName":"Buffalo, NY - Buffalo Niagara Intl Airport (BUF)"
+    "rank":99.94659
+    "score":4232.2773
+    "proximity":0
+    "airportCode":NULL
+    "timeZoneID":22
+    "fromSavedSearch":false
+  }
+  3:{23 items
+    "type":"AIRPORT"
+    "itemName":"Syracuse, NY - Syracuse Hancock Intl Airport (SYR)"
+    "id":"SYR"
+    "stateCode":"NY"
+    "cityID":"1367300018"
+    "cityCode":"SYR"
+    "cityName":"Syracuse"
+    "countryCode":"US"
+    "country":"US"
+    "provinceName":"New York"
+    "entered":"New York"
+    "gmtOffset":"-4.0"
+    "timeZoneName":"America/New_York"
+    "lat":43.1091726183046
+    "lon":-76.09572798269441
+    "poiCategoryTypeId":0
+    "displayName":"Syracuse, NY - Syracuse Hancock Intl Airport (SYR)"
+    "rank":99.935005
+    "score":4232.1875
+    "proximity":0
+    "airportCode":NULL
+    "timeZoneID":22
+    "fromSavedSearch":false
+  }
+  4:{23 items
+  "type":"AIRPORT"
+  "itemName":"New York City, NY - John F Kennedy Intl Airport (JFK)"
+  "id":"JFK"
+  "stateCode":"NY"
+  "cityID":"1365100023"
+  "cityCode":"NYC"
+  "cityName":"New York City"
+  "countryCode":"US"
+  "country":"US"
+  "provinceName":"New York"
+  "entered":"New York"
+  "gmtOffset":"-4.0"
+  "timeZoneName":"America/New_York"
+  "lat":40.639380746613675
+  "lon":-73.77204034876185
+  "poiCategoryTypeId":0
+  "displayName":"New York City, NY - John F Kennedy Intl Airport (JFK)"
+  "rank":99.91886
+  "score":4232.062
+  "proximity":0
+  "airportCode":NULL
+  "timeZoneID":22
+  "fromSavedSearch":false
+  }
+  5:{23 items
+  "type":"AIRPORT"
+  "itemName":"Newark, NJ - Newark Liberty Intl Airport (EWR)"
+  "id":"EWR"
+  "stateCode":"NJ"
+  "cityID":"1345100019"
+  "cityCode":"NYC"
+  "cityName":"Newark"
+  "countryCode":"US"
+  "country":"US"
+  "provinceName":"New Jersey"
+  "entered":"New York"
+  "gmtOffset":"-4.0"
+  "timeZoneName":"America/New_York"
+  "lat":40.69054587771886
+  "lon":-74.16978765014166
+  "poiCategoryTypeId":0
+  "displayName":"Newark, NJ - Newark Liberty Intl Airport (EWR)"
+  "rank":99.90462
+  "score":4231.952
+  "proximity":0
+  "airportCode":NULL
+  "timeZoneID":22
+  "fromSavedSearch":false
+  }
+  6:{23 items
+  "type":"AIRPORT"
+  "itemName":"Newburgh, NY - Stewart Intl Airport (SWF)"
+  "id":"SWF"
+  "stateCode":"NY"
+  "cityID":"1365003416"
+  "cityCode":"NYC"
+  "cityName":"Newburgh"
+  "countryCode":"US"
+  "country":"US"
+  "provinceName":"New York"
+  "entered":"New York"
+  "gmtOffset":"-4.0"
+  "timeZoneName":"America/New_York"
+  "lat":41.50603670752856
+  "lon":-74.09730848905761
+  "poiCategoryTypeId":0
+  "displayName":"Newburgh, NY - Stewart Intl Airport (SWF)"
+  "rank":99.89279
+  "score":4231.8604
+  "proximity":0
+  "airportCode":NULL
+  "timeZoneID":22
+  "fromSavedSearch":false
+  }
+  7:{23 items
+  "type":"AIRPORT"
+  "itemName":"Rochester, NY - Greater Rochester Intl Airport (ROC)"
+  "id":"ROC"
+  "stateCode":"NY"
+  "cityID":"1366300018"
+  "cityCode":"ROC"
+  "cityName":"Rochester"
+  "countryCode":"US"
+  "country":"US"
+  "provinceName":"New York"
+  "entered":"New York"
+  "gmtOffset":"-4.0"
+  "timeZoneName":"America/New_York"
+  "lat":43.12286630960823
+  "lon":-77.67428400405934
+  "poiCategoryTypeId":0
+  "displayName":"Rochester, NY - Greater Rochester Intl Airport (ROC)"
+  "rank":99.863625
+  "score":4231.635
+  "proximity":0
+  "airportCode":NULL
+  "timeZoneID":22
+  "fromSavedSearch":false
+  }
+]
