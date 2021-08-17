@@ -60,7 +60,7 @@ export default function CustomizedTables(props) {
             <StyledTableCell>Estimated Costs</StyledTableCell>
             <StyledTableCell align="right">Cheapest</StyledTableCell>
             <StyledTableCell align="right">Standard</StyledTableCell>
-            <StyledTableCell align="right">Nicest</StyledTableCell>
+            <StyledTableCell align="right">Most Expensive</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
