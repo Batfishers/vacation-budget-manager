@@ -29,7 +29,7 @@ const userSchema = new Schema({
     type: String,
     required: true
   },
-  searchHistory: [
+  searchHistory: [ // an array of objects. each object contains the search parameters and the api results
     {
       infoObj: { // search input
         destination: String,
@@ -81,6 +81,7 @@ userSchema.pre('save', function(next) {
 
 const User = mongoose.model('user', userSchema);
 
+// the testSchema was made to test the database before setting up login and signup functionality
 const testSchema = new Schema({
   test: String,
 });
