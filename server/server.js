@@ -37,6 +37,10 @@ app.post('/login', userController.verifyUser, (req, res) => {
   return res.status(200).json(responseToClient);
 });
 
+app.delete('/user', userController.deleteUser, (req, res) => {
+  res.status(200).json((res.locals.deleted) ? 'User deleted.' : 'No user found with that username.');
+});
+
 app.use("/build", express.static(path.join(__dirname, "../build")));
 app.get("/", (req, res) => {
   return res.status(200).sendFile(path.resolve(__dirname, "../index.html"));

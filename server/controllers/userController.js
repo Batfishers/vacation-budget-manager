@@ -50,4 +50,19 @@ userController.verifyUser = (req, res, next) => {
 
 };
 
+userController.deleteUser = async (req, res, next) => {
+  try {
+    await User.findOneAndDelete({ username : req.body.username }, (err, doc) => {
+      if (err) return next(err);
+      else {
+        if (doc) res.locals.deleted = true;
+        else res.locals.deleted = false;
+      }
+      return next();
+    })
+  } catch (err) {
+    return next(err);
+  }
+}
+
 module.exports = userController;
