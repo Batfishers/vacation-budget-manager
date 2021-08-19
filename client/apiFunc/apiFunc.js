@@ -95,7 +95,7 @@ async function getHotelLocationId(locationString) {
     const locationSearch = await fetch(`https://priceline-com-provider.p.rapidapi.com/v1/hotels/locations?name=${urlEncodedLocation}`, {
       "method": "GET",
       "headers": {
-        "x-rapidapi-key": "fb0eb671b1msh36962598bcbff78p197cddjsn9955af070c1e",
+        "x-rapidapi-key": "ffa747f32fmshe52cee5512beef2p15b216jsn6458bb8e6fe6",
         "x-rapidapi-host": "priceline-com-provider.p.rapidapi.com"
       }
     }).then((res => res.json()));

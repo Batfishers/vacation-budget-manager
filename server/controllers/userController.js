@@ -4,16 +4,18 @@ const userController = {};
 const bcrypt = require('bcryptjs');
 
 // Creates a user - edge cases for user inputs are not handled yet
-userController.createUser = (req, res, next) => {
-  User.create(req.body)
-    .then(() => {
-      // returns next without providing any information if addition to the database was successful
-      return next()
+userController.createUser = async (req, res, next) => {
+  try {
+    // Create a new user in the database
+    const doc = await User.create({
+      username: req.body.username,
+      password: req.body.password,
+      searchHistory: [],
     })
-    .catch((err) => {
-      return next('Error in userController.createUser: ' + JSON.stringify(err));
-
-    })
+    return next();
+  } catch (err) {
+    return next('Error in userController.createUser: ' + JSON.stringify(err));
+  }
 };
 
 // Verifies user password
@@ -48,6 +50,19 @@ userController.verifyUser = (req, res, next) => {
 
 };
 
-
+userController.deleteUser = async (req, res, next) => {
+  try {
+    await User.findOneAndDelete({ username : req.body.username }, (err, doc) => {
+      if (err) return next(err);
+      else {
+        if (doc) res.locals.deleted = true;
+        else res.locals.deleted = false;
+      }
+      return next();
+    })
+  } catch (err) {
+    return next(err);
+  }
+}
 
 module.exports = userController;
