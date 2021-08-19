@@ -3,6 +3,8 @@ const app = express();
 const path = require("path");
 const models = require("./models/vacationBudgetModels.js");
 const userController = require('./controllers/userController');
+const oauthRouter = require('./routes/oauthRouter');
+const url = require('url');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -40,6 +42,8 @@ app.post('/login', userController.verifyUser, (req, res) => {
 app.delete('/user', userController.deleteUser, (req, res) => {
   res.status(200).json((res.locals.deleted) ? 'User deleted.' : 'No user found with that username.');
 });
+
+app.use('/oauth', oauthRouter);
 
 app.use("/build", express.static(path.join(__dirname, "../build")));
 app.get("/", (req, res) => {

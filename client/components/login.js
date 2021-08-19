@@ -1,6 +1,7 @@
 import React from 'react';
 import { TextField, Box, Paper } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
+import GithubButton from './githubButton';
 
 const Login = () => {
     const loginClick = () => {
@@ -68,6 +69,7 @@ return (
     <p id='noAccount'>Don't have an account? Sign up below: </p>
     <div className='signinButton'>
     <Button variant='contained' color='primary' onClick={signupClick}>Sign up!</Button>
+    <GithubButton />
     </div>
     </div>
 	</div>
