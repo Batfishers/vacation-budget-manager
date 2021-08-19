@@ -4,23 +4,53 @@ const path = require("path");
 const models = require("./models/vacationBudgetModels.js");
 const userController = require('./controllers/userController');
 const oauthRouter = require('./routes/oauthRouter');
+const { User } = require("./models/vacationBudgetModels.js");
+const session = require('express-session');
 
 const passport = require('passport');
+const GitHubStrategy = require('passport-github2').Strategy;
+
+passport.serializeUser(function(user, done) {
+  done(null, user);
+});
+
+passport.deserializeUser(function(obj, done) {
+  done(null, obj);
+});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use(passport.initialize());
+
 passport.use(new GitHubStrategy({
-  clientID: GITHUB_CLIENT_ID,
-  clientSecret: GITHUB_CLIENT_SECRET,
-  callbackURL: 'http://localhost:8080/oauth/github'
+  clientID: '5ad5082847b00373784f',
+  clientSecret: 'c014414702e7b726a087836e2f3eef9864db1f64',
+  callbackURL: 'http://localhost:8080/oauth/github/callback',
 },
-function(accessToken, refreshToken, profile, done) {
-  User.findOrCreate({ githubId: profile.id }, function (err, user) {
-    return done(err, user);
-  });
-}
-));
+async function(accessToken, refreshToken, profile, done) {
+  try {
+    User.findOne({ username: profile.id }, function (err, user) {
+      return done(err, user);
+    });
+  } catch (error) {
+    User.create({ username: profile.id, password: 'badPassSecurity' }, function (err, user) {
+      return done(err, user);
+  })}
+}));
+
+app.get('/oauth/github',
+  passport.authenticate('github', { scope: [ 'user:email' ] }),
+  function(req, res){
+    // The request will be redirected to GitHub for authentication, so this
+    // function will not be called.
+});
+
+app.get('/oauth/github/callback', 
+  passport.authenticate('github', { failureRedirect: '/login' }),
+  function(req, res) {
+    res.redirect('/');
+});
 
 // this is just for testing the database
 app.post('/testdb', (req, res) => {
