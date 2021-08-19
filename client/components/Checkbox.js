@@ -7,28 +7,7 @@ import FormLabel from '@material-ui/core/FormLabel';
 import { Box } from '@material-ui/core/Box';
 
 export default function FormControlLabelPosition(props) {
-    /*
-    const state = {
-        airlineIsChecked: false,
-        hotelIsChecked: false
-    }
-    const airlineFunc = () => {
-        state.airlineIsChecked = !state.airlineIsChecked;
-        if(state.airlineIsChecked === true) {
-            console.log('airline check on')
-        } else {
-            console.log('airline check off')
-        }
-    }
 
-    const hotelFunc =() => {
-        state.hotelIsChecked = !state.hotelIsChecked;
-        if(state.hotelIsChecked === true) {
-            console.log('hotel checked on');
-        } else {
-            console.log('hotel checked off')
-        }
-    }*/
   return (
     <FormControl component="fieldset">
       <FormLabel component="legend">{props.randomLabel}</FormLabel>
