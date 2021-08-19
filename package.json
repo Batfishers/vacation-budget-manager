@@ -37,6 +37,8 @@
     "date-fns": "^2.23.0",
     "express": "^4.17.1",
     "mongoose": "^5.13.7",
+    "passport": "^0.4.1",
+    "passport-github2": "^0.1.12",
     "path": "^0.12.7",
     "pg": "^8.7.1",
     "prop-types": "^15.7.2",

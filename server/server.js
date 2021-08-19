@@ -4,10 +4,23 @@ const path = require("path");
 const models = require("./models/vacationBudgetModels.js");
 const userController = require('./controllers/userController');
 const oauthRouter = require('./routes/oauthRouter');
-const url = require('url');
+
+const passport = require('passport');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+passport.use(new GitHubStrategy({
+  clientID: GITHUB_CLIENT_ID,
+  clientSecret: GITHUB_CLIENT_SECRET,
+  callbackURL: 'http://localhost:8080/oauth/github'
+},
+function(accessToken, refreshToken, profile, done) {
+  User.findOrCreate({ githubId: profile.id }, function (err, user) {
+    return done(err, user);
+  });
+}
+));
 
 // this is just for testing the database
 app.post('/testdb', (req, res) => {
@@ -43,7 +56,7 @@ app.delete('/user', userController.deleteUser, (req, res) => {
   res.status(200).json((res.locals.deleted) ? 'User deleted.' : 'No user found with that username.');
 });
 
-app.use('/oauth', oauthRouter);
+// app.use('/oauth', oauthRouter);
 
 app.use("/build", express.static(path.join(__dirname, "../build")));
 app.get("/", (req, res) => {
