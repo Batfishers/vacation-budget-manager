@@ -39,9 +39,6 @@ function Container() {
     }
   
   // Takes the results from the apiFunc function and parses the information into states 
-
-
-  // conditional logic here or new components for what to display when checkbox is selected
   const airlineFunc = () => {
     state.airlineIsChecked = !state.airlineIsChecked;
     const airline = document.getElementById('airlineArray')
@@ -65,6 +62,9 @@ function Container() {
         
     }
 }
+
+  // conditional logic here or new components for what to display when checkbox is selected
+ 
 
   const todaysDate = () => {
     const today = new Date();
